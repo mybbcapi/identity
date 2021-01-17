@@ -8,7 +8,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         // ruleid: spring-csrf-disabled
-        // r/java.spring.security.audit.spring-csrf-disabled.spring-csrf-disabled
+        // "https://semgrep.live/p/dmspils.the-full-monty"
         http
             .csrf()
             .disable();
