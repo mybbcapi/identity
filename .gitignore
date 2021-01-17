@@ -3,4 +3,4 @@
 .project
 /.settings/
 /.vscode/
-output.log
+output*.log
