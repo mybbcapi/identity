@@ -7,11 +7,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        // ruleid: spring-csrf-disabled
-        // "https://semgrep.live/p/dmspils.the-full-monty"
-        http
+        // semgrep --config "https://semgrep.live/p/findsecbugs" --output semgrep.json --json
+        http // nosem: java.spring.security.audit.spring-csrf-disabled.spring-csrf-disabled
             .csrf()
-            .disable();
+            .disable(); 
     }
     
 }
