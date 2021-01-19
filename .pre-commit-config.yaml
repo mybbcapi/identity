@@ -1,8 +1,0 @@
-# pre-commit run --hook-stage manual semgrep-docker-develop
-repos:
-- repo: https://github.com/returntocorp/semgrep
-  rev: 'v0.37.0'
-  hooks:
-    - id: semgrep-docker-develop
-      args: ['--config', 'p/r2c-ci', '--error']
-      stages: [manual]
