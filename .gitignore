@@ -4,3 +4,4 @@
 /.settings/
 /.vscode/
 output*.log
+/.DS_Store
