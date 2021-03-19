@@ -12,28 +12,28 @@ import com.cromey.identity.repository.UserRepository;
 
 @Service("UserService")
 public class UserService {
-	
-	private UserRepository userRepository;
-	
-	@Autowired
-	public UserService(UserRepository userRepository) {
-		this.userRepository = userRepository;
-	}
-	
-	public User create(User user) {
-		user.setId(UUID.randomUUID());
-		return userRepository.save(user);
-	}
 
-	public User read(UUID id) {
-		Optional<User> user = userRepository.findById(id);
-		if(user.isPresent())
-			return user.get();
-		return null;
-	}
-	
-	public List<User> readAll() {
-		return userRepository.findAll();
-	}
-	
+  private UserRepository userRepository;
+
+  @Autowired
+  public UserService(UserRepository userRepository) {
+    this.userRepository = userRepository;
+  }
+
+  public User create(User user) {
+    user.setId(UUID.randomUUID());
+    return userRepository.save(user);
+  }
+
+  public User read(UUID id) {
+    Optional<User> user = userRepository.findById(id);
+    if (user.isPresent())
+      return user.get();
+    return null;
+  }
+
+  public List<User> readAll() {
+    return userRepository.findAll();
+  }
+
 }
