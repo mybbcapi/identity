@@ -5,3 +5,5 @@
 /.vscode/
 output*.log
 /.DS_Store
+/.idea/
+/identity.iml
